@@ -5,7 +5,7 @@ export default function BoardOfTrustee({ image, name }) {
   return (
     <div className="w-full">
       <div className="flex justify-center lg:justify-start">
-        <Image src={image} width={500} height={500} priority />
+        <Image src={image} alt={name} width={500} height={500} priority />
       </div>
 
       <div className="mt-3 text-center lg:text-left">

@@ -22,8 +22,8 @@ export default function Hero() {
           viewport={{ once: false }}
           transition={{ ease: "easeOut", duration: 1 }}
         >
-          <h1 className="text-brandYellow italic font-black text-4xl mb-7">
-            We Are The Voice Of The Voiceless
+          <h1 className="text-brandYellow italic font-black text-2xl lg:text-4xl mb-7">
+            We Are The Voice For The Voiceless
           </h1>
 
           <p className="text-black font-normal tracking-wide text-xl my-5">
@@ -48,6 +48,7 @@ export default function Hero() {
         >
           <Image
             src={"/brand/MapOfAfrica.svg"}
+            alt={"RVA Map Of Africa"}
             width={450}
             height={200}
             priority

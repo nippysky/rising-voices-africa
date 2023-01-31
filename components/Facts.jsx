@@ -9,7 +9,8 @@ export default function Facts() {
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
             src={"/brand/CollagePic.svg"}
-            width={700}
+            alt="Poor Children Of Africa"
+            width={600}
             height={500}
             priority
           />

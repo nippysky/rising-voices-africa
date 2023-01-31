@@ -3,8 +3,8 @@ import MissionVision from "./MissionVision";
 import { motion } from "framer-motion";
 
 const programs = [
-  "Love On The Streets",
-  "Charity And Gospel",
+  "Love To The Streets",
+  "Charity And The Gospel",
   "Whole Again Network",
   "Knowledge Gain Campaign",
   "Old And Productive Network",

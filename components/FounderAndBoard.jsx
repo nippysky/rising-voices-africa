@@ -12,7 +12,13 @@ export default function FounderAndBoard() {
       {/* Founder */}
       <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-20">
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-          <Image src={"/team/Anita.svg"} width={500} height={400} priority />
+          <Image
+            src={"/team/Anita.svg"}
+            alt={"Anita McCauley"}
+            width={500}
+            height={400}
+            priority
+          />
         </div>
 
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">

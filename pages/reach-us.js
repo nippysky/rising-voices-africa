@@ -88,6 +88,7 @@ export default function ReachUs() {
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <Image
               src={"/brand/RVAIcon.svg"}
+              alt={"RVA Logo"}
               priority
               width={400}
               height={400}
