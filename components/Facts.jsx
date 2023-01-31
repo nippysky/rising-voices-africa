@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Facts() {
   return (
@@ -15,7 +16,13 @@ export default function Facts() {
         </div>
 
         <div className="w-full lg:w-1/2">
-          <div className="text-white mb-14 text-center lg:text-left">
+          <motion.div
+            className="text-white mb-14 text-center lg:text-left"
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <h1 className="text-[1.5rem] font-bold tracking-wide mb-3">
               Over 3.2 Million
             </h1>
@@ -23,18 +30,30 @@ export default function Facts() {
               children under the age of 5, die each year in Sub - Saharan
               Africa.
             </span>
-          </div>
+          </motion.div>
 
-          <div className="text-white mb-14 text-center lg:text-left">
+          <motion.div
+            className="text-white mb-14 text-center lg:text-left"
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <h1 className="text-[1.5rem] font-bold tracking-wide mb-3">
               Over 30%
             </h1>
             <p className="lg:pr-40">
               rate of child sexual abuse in the world, prevails in Africa.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="text-white mb-14 text-center lg:text-left">
+          <motion.div
+            className="text-white mb-14 text-center lg:text-left"
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ ease: "easeOut", duration: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <h1 className="text-[1.5rem] font-bold tracking-wide mb-3">
               Education
             </h1>
@@ -42,7 +61,7 @@ export default function Facts() {
               Over one-fifth of children between the ages of about 6 and 11 are
               out of school.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import MissionVision from "./MissionVision";
+import { motion } from "framer-motion";
 
 const programs = [
   "Love On The Streets",
@@ -22,16 +23,20 @@ export default function MVP() {
 
         <div className="grid md:grid-cols-2 gap-10 my-20">
           {programs.map((program, index) => (
-            <div
+            <motion.div
               key={index}
               className={`w-full flex justify-center items-center py-5 font-semibold tracking-wide ${
                 index % 2 === 0
                   ? "border border-brandYellow hover:bg-brandYellow hover:text-white"
                   : "border border-brandBlue hover:bg-brandBlue hover:text-white"
               }`}
+              initial={{ opacity: 0, y: 200 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               {program}
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

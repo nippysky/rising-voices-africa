@@ -7,6 +7,8 @@ import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
 export default function ReachUs() {
   return (
     <>
@@ -25,7 +27,12 @@ export default function ReachUs() {
 
         {/* Main Hero Section */}
         <section className="w-full h-[85%] flex flex-col lg:flex-row justify-between items-center gap-10 py-20 lg:py-0">
-          <div className="w-full lg:w-1/2 ">
+          <motion.div
+            className="w-full lg:w-1/2 "
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
             <h1 className="text-black font-extrabold text-3xl">Contact Us</h1>
             <p className="mt-3 mb-10 font-normal text-[1.2rem]">
               If you have an enquiry, needs or want to have a chat with us,
@@ -76,7 +83,7 @@ export default function ReachUs() {
                 <span>LinkedIn</span>
               </div>
             </Link>
-          </div>
+          </motion.div>
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <Image

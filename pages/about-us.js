@@ -6,6 +6,8 @@ import MissionVision from "@/components/MissionVision";
 import FounderAndBoard from "@/components/FounderAndBoard";
 import OurProgramDetails from "@/components/OurProgramDetails";
 
+import { motion } from "framer-motion";
+
 export default function AboutUs() {
   return (
     <>
@@ -23,7 +25,13 @@ export default function AboutUs() {
         </div>
 
         <div className="w-full h-[85%] flex items-center justify-center py-20 lg:py-0">
-          <div className="text-center">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+          >
             <h1 className="text-brandBlue text-4xl font-black">Who We Are</h1>
             <p className="text-black font-normal tracking-wide text-xl my-10 lg:px-32">
               Rising Voices frica is a human rights NGO aimed at seeking justice
@@ -39,7 +47,7 @@ export default function AboutUs() {
                 View Event Gallery
               </button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Header from "./Header";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -14,7 +15,13 @@ export default function Hero() {
       {/* Main Hero Section */}
       <section className="w-full h-[85%] flex flex-col lg:flex-row justify-between items-center gap-10">
         {/* text */}
-        <div className="w-full lg:w-1/2 lg:pr-20 mt-20 lg:mt-0 text-center lg:text-left">
+        <motion.div
+          className="w-full lg:w-1/2 lg:pr-20 mt-20 lg:mt-0 text-center lg:text-left"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
           <h1 className="text-brandYellow italic font-black text-4xl mb-7">
             We Are The Voice Of The Voiceless
           </h1>
@@ -30,17 +37,22 @@ export default function Hero() {
               Support Us
             </button>
           </Link>
-        </div>
+        </motion.div>
 
         {/* map of africa */}
-        <div className="w-full lg:w-1/2 flex lg:justify-end justify-center mb-10 lg:mb-0">
+        <motion.div
+          className="w-full lg:w-1/2 flex lg:justify-end justify-center mb-10 lg:mb-0"
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
           <Image
             src={"/brand/MapOfAfrica.svg"}
             width={450}
             height={200}
             priority
           />
-        </div>
+        </motion.div>
       </section>
     </section>
   );

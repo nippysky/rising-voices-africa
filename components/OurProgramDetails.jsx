@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
+import { motion } from "framer-motion";
+
 const programDetails = [
   {
     head: "Love To The Streets",
@@ -42,7 +44,13 @@ export default function OurProgramDetails() {
 
       <div className="w-full gap-20 grid xl:grid-cols-3 lg:grid-cols-2 lg:mt-20 mt-10">
         {programDetails.map((program, index) => (
-          <div key={index}>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 200 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+          >
             <h1
               className={`text-xl font-bold text-center lg:text-left ${
                 index % 2 === 0 ? "text-brandYellow" : "text-brandBlue"
@@ -52,7 +60,7 @@ export default function OurProgramDetails() {
             </h1>
 
             <p className="mt-5 text-center lg:text-justify">{program.text}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
 
