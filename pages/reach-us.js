@@ -78,7 +78,7 @@ export default function ReachUs() {
             </Link>
           </div>
 
-          <div>
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <Image
               src={"/brand/RVAIcon.svg"}
               priority
