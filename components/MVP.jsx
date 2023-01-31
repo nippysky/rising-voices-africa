@@ -7,7 +7,7 @@ const programs = [
   "Whole Again Network",
   "Knowledge Gain Campaign",
   "Old And Productive Network",
-  "School Sentitization",
+  "School Sensitization",
 ];
 
 export default function MVP() {
