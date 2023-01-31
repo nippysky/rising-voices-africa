@@ -1,4 +1,6 @@
+import Facts from "@/components/Facts";
 import Hero from "@/components/Hero";
+import MVP from "@/components/MVP";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
 
       <main className="w-full">
         <Hero />
+        <MVP />
+        <Facts />
       </main>
     </>
   );

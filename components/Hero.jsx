@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         {/* map of africa */}
-        <div className="w-full lg:w-1/2 flex justify-end mb-10 lg:mb-0">
+        <div className="w-full lg:w-1/2 flex lg:justify-end justify-center mb-10 lg:mb-0">
           <Image
             src={"/brand/MapOfAfrica.svg"}
             width={450}

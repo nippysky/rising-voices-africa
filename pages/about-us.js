@@ -15,6 +15,8 @@ export default function AboutUs() {
       <section className="w-full px-5 lg:px-20">
         <Header />
       </section>
+
+      <main></main>
     </>
   );
 }
