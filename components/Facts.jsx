@@ -6,7 +6,7 @@ export default function Facts() {
   return (
     <>
       <section className="w-full px-5 lg:px-20 flex flex-col lg:flex-row gap-20 justify-between items-center bg-brandBlue py-20">
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="w-full hidden lg:w-1/2 lg:flex lg:justify-center">
           <Image
             src={"/brand/CollagePic.svg"}
             alt="Poor Children Of Africa"
