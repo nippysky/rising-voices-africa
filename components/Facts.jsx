@@ -10,8 +10,8 @@ export default function Facts() {
           <Image
             src={"/brand/CollagePic.svg"}
             alt="Poor Children Of Africa"
-            width={600}
-            height={500}
+            width={400}
+            height={250}
             priority
           />
         </div>

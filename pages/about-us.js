@@ -42,7 +42,7 @@ export default function AboutUs() {
               supported by our partners and sponsors.
             </p>
 
-            <Link href={"/"}>
+            <Link href={"/gallery"}>
               <button className="rounded-full text-white bg-brandYellow py-3 px-10 font-medium hover:bg-brandBlue">
                 View Event Gallery
               </button>

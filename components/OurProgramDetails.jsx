@@ -64,7 +64,7 @@ export default function OurProgramDetails() {
         ))}
       </div>
 
-      <Link href={"/"}>
+      <Link href={"/gallery"}>
         <div className="w-full flex justify-center mt-20">
           <button className="rounded-full text-white bg-brandYellow py-3 px-10 font-medium hover:bg-brandBlue">
             View Event Gallery
