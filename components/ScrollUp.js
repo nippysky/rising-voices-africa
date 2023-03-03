@@ -26,7 +26,7 @@ export default function BackToTheTop() {
   if (!mounted) return null;
 
   return (
-    <div className="z-0">
+    <div className="z-9999">
       {backToTheTop && (
         <div
           onClick={scrollUp}
