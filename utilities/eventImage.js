@@ -25,121 +25,121 @@ import eventImage20 from "../public/event/RVA_Event20.svg";
 const eventImages = [
   {
     id: 1,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage,
   },
 
   {
     id: 2,
-    title: "RVA Reach Out",
+    title: "Strategy Session",
     image: eventImage1,
   },
 
   {
     id: 3,
-    title: "RVA Reach Out",
+    title: "Community Outreach",
     image: eventImage2,
   },
 
   {
     id: 4,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage3,
   },
 
   {
     id: 5,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage4,
   },
 
   {
     id: 6,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage5,
   },
 
   {
     id: 7,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage6,
   },
 
   {
     id: 8,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage7,
   },
 
   {
     id: 9,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage8,
   },
 
   {
     id: 10,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage10,
   },
 
   {
     id: 11,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage11,
   },
 
   {
     id: 12,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage12,
   },
 
   {
     id: 13,
-    title: "RVA Reach Out",
+    title: "Love To The Streets",
     image: eventImage13,
   },
 
   {
     id: 14,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage14,
   },
 
   {
     id: 15,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage15,
   },
 
   {
     id: 16,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage16,
   },
 
   {
     id: 17,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage17,
   },
 
   {
     id: 18,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage18,
   },
 
   {
     id: 19,
-    title: "RVA Reach Out",
+    title: "School Sensitization Campaign",
     image: eventImage19,
   },
 
   {
     id: 20,
-    title: "RVA Reach Out",
+    title: "Community Outreach",
     image: eventImage20,
   },
 ];

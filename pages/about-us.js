@@ -34,12 +34,12 @@ export default function AboutUs() {
           >
             <h1 className="text-brandBlue text-4xl font-black">Who We Are</h1>
             <p className="text-black font-normal tracking-wide text-xl my-10 lg:px-32">
-              Rising Voices frica is a human rights NGO aimed at seeking justice
-              and fair treatment for victims of any form of In human treatment
-              in Africa. We also help amplify the voices of the underprivileged
-              who are in dire need of basic amenities to survive in different
-              parts of Africa, through our various programs and movements
-              supported by our partners and sponsors.
+              Rising Voices Africa is a human rights NGO aimed at seeking
+              justice and fair treatment for victims of any form of In human
+              treatment in Africa. We also help amplify the voices of the
+              underprivileged who are in dire need of basic amenities to survive
+              in different parts of Africa, through our various programs and
+              movements supported by our partners and sponsors.
             </p>
 
             <Link href={"/gallery"}>
